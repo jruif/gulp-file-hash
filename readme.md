@@ -13,9 +13,9 @@ npm install gulp-csso --save-dev
 
 ```js
 var fileHash = require('gulp-file-hash');
-gulp.src('src/*')
+gulp.src('dist/*')
     .pipe(fileHash('upload.json'))
-    .pipe(gulp.dest('dist/'))
+    .pipe(/* upload command */)
 ```
 
 ## API
