@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/jruif/gulp-file-hash/issues"
   },
-  "homepage": "https://github.com/jruif/gulp-file-hash#readme"
+  "homepage": "https://github.com/jruif/gulp-file-hash#readme",
+  "devDependencies": {
+    "object-assign": "^4.1.0",
+    "through2": "^2.0.1"
+  }
 }
