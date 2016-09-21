@@ -2,7 +2,7 @@
 * @Author: jruif
 * @Date:   2016-05-25 14:44:37
 * @Last Modified by:   jruif
-* @Last Modified time: 2016-05-25 14:46:57
+* @Last Modified time: 2016-05-25 17:32:56
 */
 
 'use strict';
@@ -13,8 +13,8 @@ var crypto = require('crypto');
 var objectAssign = require('object-assign');
 
 
-function sha256(data) {
-    return crypto.createHash('sha256').update(data).digest("base64");
+function hash(data) {
+    return crypto.createHash('sha1').update(data).digest("hex");
 }
 
 module.exports = function(logFile) {
@@ -34,7 +34,7 @@ module.exports = function(logFile) {
             return;
         }
 
-        newLogFile[file.relative] = sha256(file.contents);
+        newLogFile[file.relative] = hash(file.contents);
 
         if (!oldLogFile[file.relative] || oldLogFile[file.relative] !== newLogFile[file.relative]) {
             this.push(file);
@@ -46,7 +46,7 @@ module.exports = function(logFile) {
 
         fs.writeFile(logFile, JSON.stringify(newLogFile), 'utf8');
 
-        cb();
+        return cb();
     })
 }
 

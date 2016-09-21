@@ -6,7 +6,7 @@ gulp-file-hash
 ## Install
 With npm do:
 ```bash
-npm install gulp-csso --save-dev
+npm install gulp-file-hash --save-dev
 ```
 
 ## Example
