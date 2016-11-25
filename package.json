@@ -21,7 +21,11 @@
     "url": "https://github.com/jruif/gulp-file-hash/issues"
   },
   "homepage": "https://github.com/jruif/gulp-file-hash#readme",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "object-assign": "^4.1.0",
     "through2": "^2.0.1"
   }
