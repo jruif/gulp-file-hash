@@ -1,6 +1,11 @@
 gulp-file-hash
 ===========
 
+[![NPM version](http://img.shields.io/npm/v/gulp-file-hash.svg)](https://npmjs.org/package/gulp-file-hash)
+[![Downloads](http://img.shields.io/npm/dm/gulp-file-hash.svg)](https://npmjs.org/package/gulp-file-hash)
+[![Support us](http://img.shields.io/gittip/intervalia.svg)](https://www.gittip.com/intervalia/)
+
+
 通过比较文件的hash来控制文件的版本，使每次发布的文件数最小
 
 ## Install
