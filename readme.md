@@ -1,6 +1,6 @@
 gulp-file-hash
 ===========
-
+[![Build Status](https://travis-ci.org/jruif/gulp-file-hash.svg?branch=master)](https://travis-ci.org/jruif/gulp-file-hash)
 [![NPM version](http://img.shields.io/npm/v/gulp-file-hash.svg)](https://npmjs.org/package/gulp-file-hash)
 [![Downloads](http://img.shields.io/npm/dm/gulp-file-hash.svg)](https://npmjs.org/package/gulp-file-hash)
 [![Support us](http://img.shields.io/gittip/jruif.svg)](https://www.gittip.com/jruif/)
