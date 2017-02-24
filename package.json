@@ -1,7 +1,7 @@
 {
   "name": "gulp-file-hash",
-  "version": "0.1.2",
-  "description": "通过文件hash来控制文件版本的发布",
+  "version": "0.2.1",
+  "description": "通过在根目录保存一个记录文件hash的json文件，在每次上传之前对文件的hash进行比较，过滤出hash值发生改变的文件",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,10 @@
     "gulp": "^3.9.1",
     "object-assign": "^4.1.0",
     "through2": "^2.0.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "object-assign": "^4.1.1",
+    "through2": "^2.0.3"
   }
 }
