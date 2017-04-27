@@ -22,7 +22,7 @@ module.exports = function(logFile) {
     var oldLogFile = null;
 
     try {
-        oldLogFile = require('../' + logFile);
+        oldLogFile = require(logFile);
     } catch (e) {
         oldLogFile = {}
     }
